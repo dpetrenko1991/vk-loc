@@ -1,4 +1,5 @@
 <?php 
+require_once 'classes/db.php';
 $errors = array();
 if (isset($_POST['data']) && !empty($_POST['data'])) 
 {
@@ -31,7 +32,8 @@ if (isset($_POST['data']) && !empty($_POST['data']))
 			'password' => md5($data['password']),
 			'date_birth' => $data['year'] . "-" . $data['month']. "-" . $data['day']
 			);
-
+			$db = Db::connect();
+			var_dump($db);
 	}
 }
 include 'block/header.php';
