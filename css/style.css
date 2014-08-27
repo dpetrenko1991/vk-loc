@@ -71,7 +71,6 @@ h1,h2,h3,h4 {
     
 }
 .block{
-   height: 200px;
     width: 250px;
     background: #ffff00; 
     border-radius: 15px;
@@ -80,6 +79,7 @@ h1,h2,h3,h4 {
     border: 1px solid #ffcc00 ; 
     margin-left: 170px;
     margin-top: 10px;
+    padding-bottom: 20px;
 }
 .block h2{
     color: #ff9933; 
@@ -126,4 +126,9 @@ h1,h2,h3,h4 {
 .footer_info a{
     color:   #ff3333;
     font-family:  cursive;
+}
+.errors div{
+    color: #ff0000;
+    margin-bottom: 3px;
+    font-style: italic;
 }

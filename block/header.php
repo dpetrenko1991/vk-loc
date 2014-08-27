@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="utf-8" />
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	<link href="css/style.css"  rel="stylesheet" type="text/css" />
 	<title>vk.loc</title>
     </head>
