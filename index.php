@@ -25,15 +25,20 @@ if (isset($_POST['data']) && !empty($_POST['data']))
 			$errors[] = "Введите корректную дату рождения";
 		}
 	}
+	//if all data correct - insert new record
 	if (empty($errors)) {
 		$user = array(
-			'email' => $data['mail'],
-			'login' => $data['login'],
-			'password' => md5($data['password']),
-			'date_birth' => $data['year'] . "-" . $data['month']. "-" . $data['day']
+			':email' => $data['mail'],
+			':login' => $data['login'],
+			':password' => md5($data['password']),
+			':date_birth' => $data['year'] . "-" . $data['month']. "-" . $data['day']
 			);
-			$db = Db::connect();
-			var_dump($db);
+
+			$db = new Db();
+			$db->_db;
+			if (!$db->query("INSERT INTO users (email, login, password, date_birth) VALUES (:email, :login, :password, :date_birth)", $user)) {
+				$errors[] = 'Ошибка при регистрации.';
+			}
 	}
 }
 include 'block/header.php';
