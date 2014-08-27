@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* -----Сброс CSS стилей (для любого проекта)------ */
+html, body {
+	margin:0px;
+	padding:0px;
+	
+}
+body {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color:#000;
+	
+}
+
+p {
+	text-indent:0px;
+	margin:0px;
+	padding:0px;
+}
+
+
+a:hover{
+	text-decoration: none;
+}
+ul, li {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+h1,h2,h3,h4 {
+	margin:0px;
+	padding:0px;
+}
+.clear {
+	clear:both;
+}
+/* ----------------------------------------- */
+.layout{
+    width: 1366px;
+    margin: 0 auto;
+}
+.heder{
+    height: 50px;
+    width: 1024px;
+    background: #ffff00; 
+    margin-left: 150px;
+    border-radius: 5px;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+    border: 1px solid #ffcc00 ;
+}
+.heder .logo a{
+    display:block;
+    background:url(../images/smail.png) left top no-repeat;	
+    width:278px;
+    height:75px;
+    margin-top:5px;
+    margin-left:10px;
+}
+.heder_info{
+    margin-left: 60px;
+    margin-top: -75px;
+}
+.heder_info h1{
+    font-size: 24px;
+    font-family:  cursive;
+    color: #ff9933;
+    
+}
+.block{
+   height: 200px;
+    width: 250px;
+    background: #ffff00; 
+    border-radius: 15px;
+    -moz-border-radius: 15px; 
+    -webkit-border-radius: 15px;
+    border: 1px solid #ffcc00 ; 
+    margin-left: 170px;
+    margin-top: 10px;
+}
+.block h2{
+    color: #ff9933; 
+    font-size: 15px;
+    font-family:  cursive;
+    margin-left: 70px;
+    margin-top: 5px;
+}
+.block h3{
+    color: #ff9933; 
+    font-size: 15px;
+    font-family:  cursive;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.block input{
+    float: right;
+    margin-right: 25px;
+}
+.border{
+    border: 1px solid #ffcc00;
+    padding: 20px;
+    height: 500px;
+    width: 650px;
+    margin-top: -213px;
+    margin-left: 432px;
+}
+.footer{
+   height: 50px;
+   width: 1024px;
+   background: #ffff00; 
+   margin-left: 150px;
+   margin-top: -1px;
+   border-radius: 5px;
+   -moz-border-radius: 5px; 
+   -webkit-border-radius: 5px;
+   border: 1px solid #ffcc00 ;
+}
+.footer_info{
+    margin-top: 5px;
+    margin-left: 500px;
+    color: #ffcc00;
+}
+.footer_info a{
+    color:   #ff3333;
+    font-family:  cursive;
+}
